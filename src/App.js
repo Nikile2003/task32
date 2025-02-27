@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./Navbar";  // Your existing Navbar
+import Footer from "./Footer"; // Import Footer
+import Body from "./Body"; // Import Body
+import "./App.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      
+      {/* Main content */}
+      <div className="content">
+        <Body /> {/* Add Body Component Here */}
+      </div>
+
+      <Footer />  {/* Add Footer Here */}
     </div>
   );
 }

@@ -1,38 +1,42 @@
+/* App.css */
+
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure App covers full height */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+/* Content should take up available space */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f1f3f6; /* Flipkart light gray background */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #172337; /* Flipkart Dark Blue */
   color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a:hover {
+  text-decoration: underline;
 }
